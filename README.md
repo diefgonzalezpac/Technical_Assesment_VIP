@@ -16,9 +16,9 @@ It also writes final cleaned CSVs and includes business SQL queries.
 ---
 
 ## 📦 Repository Layout
-
+```bash
 healthtech-etl/
-├─ etl/
+├── etl/
 │ ├─ extract.py # read Excel sources
 │ ├─ transform.py # normalize/clean data
 │ ├─ load.py # PostgreSQL loader (TRUNCATE/LOAD)
@@ -32,10 +32,10 @@ healthtech-etl/
 │ └─ processed/ # output CSVs
 ├─ logs/ # etl.log written here
 ├─ queries.sql # business questions
-├─ docker-compose.yml # optional local Postgres (14)
 ├─ requirements.txt
 ├─ .env.example
 └─ main.py
+```
 
 ## 🚀 Quick Start
 
