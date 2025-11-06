@@ -113,6 +113,7 @@ python main.py --duckdb
     Centralized DAGs, retries, SLAs, dependency management, auditability.
 
 -- **Extract (E):** 
+
     AWS Lambda on S3 events or scheduled by Airflow
     Validates uploads, unzips/xlsx→Parquet, basic normalization, pushes to S3 raw/bronze.
 
@@ -124,3 +125,11 @@ python main.py --duckdb
 
     As discussed in our last meeting Snowflake is the company’s warehouse
     Airflow → SnowflakeOperator: run COPY INTO on a schedule with file manifests 
+
+## Why these tools?
+
+-- **MWAA (Airflow):** Standard orchestration, rich operator ecosystem (Snowflake, S3, Lambda, Glue), operational visibility, retries and also because of the kind of data, we have medical records about appointments that could be included day by day using cron operations, Airflow is an amaizing tool for this kind of scenarios
+
+-- **Lambda (Extraction):** Serverless, cheap for light/medium workload; perfect for parsing Excel → Parquet and metadata validation. Seconds to minutes runtime, for simplicity.
+
+-- **Snowflake + DBT:(Transformation + Load):** Because of the little amount of data services like AWS Glue could be too much, light dbt operations inside Snowflake could be used for data modeling, testing, and table creations simplifying the operation
