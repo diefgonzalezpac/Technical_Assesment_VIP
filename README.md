@@ -1,0 +1,106 @@
+# VIP Assesment ETL — from Excel files → PostgreSQL (default) or DuckDB (for simplicity)
+
+An idempotent **ETL pipeline** that reads two Excel files (doctors, appointments), cleans/transforms them, and loads the results into:
+- **PostgreSQL** (default; via Docker or your local server), or
+- **DuckDB** (no server required) with `--duckdb`.
+
+It also writes final cleaned CSVs and includes business SQL queries.
+
+## 🧰 Tech Stack
+
+- **Python** (pandas, openpyxl, python-dotenv)
+- **PostgreSQL** (via Docker or local)
+- **DuckDB** (embedded; single file)
+- **Logging** to console and `logs/etl.log`
+
+---
+
+## 📦 Repository Layout
+
+healthtech-etl/
+├─ etl/
+│ ├─ extract.py # read Excel sources
+│ ├─ transform.py # normalize/clean data
+│ ├─ load.py # PostgreSQL loader (TRUNCATE/LOAD)
+│ ├─ load_duckdb.py # DuckDB loader (CREATE OR REPLACE TABLE)
+│ ├─ logging_utils.py # console + file logs
+│ └─ config.py # paths, env vars, backends
+├─ data/
+│ ├─ raw/
+│ │ ├─ Data Enginner's Doctors Excel - VIP Medical Group.xlsx
+│ │ └─ Data Engineer's Appointments Excel - VIP Medical Group.xlsx
+│ └─ processed/ # output CSVs
+├─ logs/ # etl.log written here
+├─ queries.sql # business questions
+├─ docker-compose.yml # optional local Postgres (14)
+├─ requirements.txt
+├─ .env.example
+└─ main.py
+
+## 🚀 Quick Start
+
+```bash
+git clone https://github.com/your-org/sales-etl.git
+cd VIP_Test
+
+python -m venv .venv
+# macOS/Linux:
+source .venv/bin/activate
+# Windows PowerShell:
+# .venv\Scripts\Activate.ps1
+
+pip install -r requirements.txt
+```
+**(VERY IMPORTANT)** I have Include two possible ways to run the ETL
+
+First one with PostgreSQL integration (No Dockerized)
+
+```bash
+cp .env.example .env
+# .env defaults:
+# PGHOST=localhost
+# PGPORT=5432
+# PGUSER=postgres
+# PGPASSWORD=postgres
+# PGDATABASE=postgres
+# PGSCHEMA=healthtech
+
+# Run ETL (PostgreSQL backend)
+python main.py
+```
+
+Second one (Recommended) Run with DuckDB (no server required)
+```bash
+# Run ETL (DuckDB backend)
+python main.py --duckdb
+```
+
+## 📥 Inputs  📤 Outputs
+
+- **Inputs** (place in data/raw/):
+
+    Data Enginner's Doctors Excel - VIP Medical Group.xlsx (sheet: doctors)
+
+    Data Engineer's Appointments Excel - VIP Medical Group.xlsx (sheet: appointments)
+
+- **Outputs:**
+
+    Final datasets (CSV): data/processed/doctors_clean.csv, data/processed/appointments_clean.csv
+
+- **Database:**
+
+    Postgres: schema healthtech, tables doctors, appointments
+
+    DuckDB: file healthtech.duckdb with schema healthtech and the same tables
+
+- **Logs:** logs/etl.log
+
+## Questions
+
+🔢 Q1 — Which doctor has the most confirmed appointments?
+
+🧍‍♀️ Q2 — How many confirmed appointments does the patient with patient_id ‘34’ have?
+
+🗓️ Q3 — How many cancelled appointments are there between Oct 21, 2025 and Oct 24, 2025 (inclusive)?
+
+🧑‍⚕️ Q4 — What is the total number of confirmed appointments for each doctor?

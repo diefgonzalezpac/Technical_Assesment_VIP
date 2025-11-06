@@ -1,0 +1,94 @@
+2025-11-05 18:09:37,213 | INFO | Starting ETL pipeline...
+2025-11-05 18:09:37,213 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Enginner's Doctors Excel - VIP Medical Group.xlsx (sheet=doctors)
+2025-11-05 18:09:37,514 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Engineer's Appointments Excel - VIP Medical Group.xlsx (sheet=appointments)
+2025-11-05 18:09:37,545 | INFO | Extraction complete.
+2025-11-05 18:09:37,546 | INFO | ETL pipeline completed successfully.
+2025-11-05 18:10:24,768 | INFO | Starting ETL pipeline...
+2025-11-05 18:10:24,769 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Enginner's Doctors Excel - VIP Medical Group.xlsx (sheet=doctors)
+2025-11-05 18:10:24,931 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Engineer's Appointments Excel - VIP Medical Group.xlsx (sheet=appointments)
+2025-11-05 18:10:24,962 | INFO | Extraction complete.
+2025-11-05 18:10:24,968 | INFO | ETL pipeline completed successfully.
+2025-11-05 18:10:46,978 | INFO | Starting ETL pipeline...
+2025-11-05 18:10:46,978 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Enginner's Doctors Excel - VIP Medical Group.xlsx (sheet=doctors)
+2025-11-05 18:10:47,144 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Engineer's Appointments Excel - VIP Medical Group.xlsx (sheet=appointments)
+2025-11-05 18:10:47,176 | INFO | Extraction complete.
+2025-11-05 18:10:47,186 | INFO | ETL pipeline completed successfully.
+2025-11-05 18:16:50,278 | INFO | Starting ETL pipeline...
+2025-11-05 18:16:50,278 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Enginner's Doctors Excel - VIP Medical Group.xlsx (sheet=doctors)
+2025-11-05 18:16:50,498 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Engineer's Appointments Excel - VIP Medical Group.xlsx (sheet=appointments)
+2025-11-05 18:16:50,529 | INFO | Extraction complete.
+2025-11-05 18:16:50,538 | INFO | Cleaning doctors...
+2025-11-05 18:16:50,541 | INFO | Doctors cleaned: 5 -> 5 rows
+2025-11-05 18:16:50,542 | INFO | Cleaning appointments...
+2025-11-05 18:16:50,554 | INFO | Appointments cleaned: 1025 -> 771 rows
+2025-11-05 18:16:50,571 | INFO | Wrote processed datasets: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\processed\doctors_clean.csv, C:\Users\Diego Gonzalez\Documents\VIP_Test\data\processed\appointments_clean.csv
+2025-11-05 18:16:50,572 | INFO | ETL pipeline completed successfully.
+2025-11-05 19:32:09,355 | INFO | Starting ETL pipeline...
+2025-11-05 19:32:09,356 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Enginner's Doctors Excel - VIP Medical Group.xlsx (sheet=doctors)
+2025-11-05 19:32:09,591 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Engineer's Appointments Excel - VIP Medical Group.xlsx (sheet=appointments)
+2025-11-05 19:32:09,620 | INFO | Extraction complete.
+2025-11-05 19:32:09,621 | INFO | Cleaning doctors...
+2025-11-05 19:32:09,623 | INFO | Doctors cleaned: 5 -> 5 rows
+2025-11-05 19:32:09,624 | INFO | Cleaning appointments...
+2025-11-05 19:32:09,632 | INFO | Appointments cleaned: 1025 -> 771 rows
+2025-11-05 19:32:09,644 | INFO | Wrote processed datasets: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\processed\doctors_clean.csv, C:\Users\Diego Gonzalez\Documents\VIP_Test\data\processed\appointments_clean.csv
+2025-11-05 19:32:09,645 | INFO | ETL pipeline completed successfully.
+2025-11-05 19:32:40,563 | INFO | Starting ETL pipeline...
+2025-11-05 19:32:40,564 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Enginner's Doctors Excel - VIP Medical Group.xlsx (sheet=doctors)
+2025-11-05 19:32:40,723 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Engineer's Appointments Excel - VIP Medical Group.xlsx (sheet=appointments)
+2025-11-05 19:32:40,755 | INFO | Extraction complete.
+2025-11-05 19:32:40,755 | INFO | Cleaning doctors...
+2025-11-05 19:32:40,758 | INFO | Doctors cleaned: 5 -> 5 rows
+2025-11-05 19:32:40,759 | INFO | Cleaning appointments...
+2025-11-05 19:32:40,766 | INFO | Appointments cleaned: 1025 -> 771 rows
+2025-11-05 19:32:40,775 | INFO | Wrote processed datasets: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\processed\doctors_clean.csv, C:\Users\Diego Gonzalez\Documents\VIP_Test\data\processed\appointments_clean.csv
+2025-11-05 20:04:26,931 | INFO | Backend selected: DuckDB
+2025-11-05 20:04:26,931 | INFO | Starting ETL pipeline...
+2025-11-05 20:04:26,932 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Enginner's Doctors Excel - VIP Medical Group.xlsx (sheet=doctors)
+2025-11-05 20:04:27,268 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Engineer's Appointments Excel - VIP Medical Group.xlsx (sheet=appointments)
+2025-11-05 20:04:27,303 | INFO | Extraction complete.
+2025-11-05 20:04:27,304 | INFO | Cleaning doctors...
+2025-11-05 20:04:27,309 | INFO | Doctors cleaned: 5 -> 5 rows
+2025-11-05 20:04:27,310 | INFO | Cleaning appointments...
+2025-11-05 20:04:27,320 | INFO | Appointments cleaned: 1025 -> 771 rows
+2025-11-05 20:04:27,332 | INFO | Wrote processed datasets: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\processed\doctors_clean.csv, C:\Users\Diego Gonzalez\Documents\VIP_Test\data\processed\appointments_clean.csv
+2025-11-05 20:04:27,332 | INFO | Connecting DuckDB at: C:\Users\Diego Gonzalez\Documents\healthtech.duckdb
+2025-11-05 20:07:50,390 | INFO | Backend selected: DuckDB
+2025-11-05 20:07:50,391 | INFO | Starting ETL pipeline...
+2025-11-05 20:07:50,391 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Enginner's Doctors Excel - VIP Medical Group.xlsx (sheet=doctors)
+2025-11-05 20:07:50,685 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Engineer's Appointments Excel - VIP Medical Group.xlsx (sheet=appointments)
+2025-11-05 20:07:50,730 | INFO | Extraction complete.
+2025-11-05 20:07:50,730 | INFO | Cleaning doctors...
+2025-11-05 20:07:50,742 | INFO | Doctors cleaned: 5 -> 5 rows
+2025-11-05 20:07:50,743 | INFO | Cleaning appointments...
+2025-11-05 20:07:50,762 | INFO | Appointments cleaned: 1025 -> 771 rows
+2025-11-05 20:07:50,774 | INFO | Wrote processed datasets: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\processed\doctors_clean.csv, C:\Users\Diego Gonzalez\Documents\VIP_Test\data\processed\appointments_clean.csv
+2025-11-05 20:07:50,775 | INFO | Connecting DuckDB at: C:\Users\Diego Gonzalez\Documents\healthtech.duckdb
+2025-11-05 20:07:50,820 | INFO | DuckDB load completed (tables replaced).
+2025-11-05 20:07:50,841 | INFO | ETL pipeline completed successfully.
+2025-11-05 20:15:12,495 | INFO | Backend selected: DuckDB
+2025-11-05 20:15:12,495 | INFO | Starting ETL pipeline...
+2025-11-05 20:15:12,495 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Enginner's Doctors Excel - VIP Medical Group.xlsx (sheet=doctors)
+2025-11-05 20:15:12,693 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Engineer's Appointments Excel - VIP Medical Group.xlsx (sheet=appointments)
+2025-11-05 20:15:12,727 | INFO | Extraction complete.
+2025-11-05 20:15:12,728 | INFO | Cleaning doctors...
+2025-11-05 20:15:12,731 | INFO | Doctors cleaned: 5 -> 5 rows
+2025-11-05 20:15:12,732 | INFO | Cleaning appointments...
+2025-11-05 20:15:12,741 | INFO | Appointments cleaned: 1025 -> 771 rows
+2025-11-05 20:15:12,751 | INFO | Wrote processed datasets: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\processed\doctors_clean.csv, C:\Users\Diego Gonzalez\Documents\VIP_Test\data\processed\appointments_clean.csv
+2025-11-05 20:15:12,751 | INFO | Connecting DuckDB at: C:\Users\Diego Gonzalez\Documents\VIP_Test\healthtech.duckdb
+2025-11-05 20:15:12,779 | INFO | DuckDB load completed (tables replaced).
+2025-11-05 20:15:12,799 | INFO | ETL pipeline completed successfully.
+2025-11-05 20:20:46,758 | INFO | Backend selected: DuckDB
+2025-11-05 20:20:46,759 | INFO | Starting ETL pipeline...
+2025-11-05 20:20:46,759 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Enginner's Doctors Excel - VIP Medical Group.xlsx (sheet=doctors)
+2025-11-05 20:20:47,052 | INFO | Reading Excel: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\raw\Data Engineer's Appointments Excel - VIP Medical Group.xlsx (sheet=appointments)
+2025-11-05 20:20:47,098 | INFO | Extraction complete.
+2025-11-05 20:20:47,099 | INFO | Cleaning doctors...
+2025-11-05 20:20:47,103 | INFO | Doctors cleaned: 5 -> 5 rows
+2025-11-05 20:20:47,104 | INFO | Cleaning appointments...
+2025-11-05 20:20:47,116 | INFO | Appointments cleaned: 1025 -> 771 rows
+2025-11-05 20:20:47,126 | INFO | Wrote processed datasets: C:\Users\Diego Gonzalez\Documents\VIP_Test\data\processed\doctors_clean.csv, C:\Users\Diego Gonzalez\Documents\VIP_Test\data\processed\appointments_clean.csv
+2025-11-05 20:20:47,127 | INFO | Connecting DuckDB at: C:\Users\Diego Gonzalez\Documents\VIP_Test\healthtech.duckdb
+2025-11-05 20:20:47,151 | INFO | DuckDB load completed (tables replaced).
+2025-11-05 20:20:47,176 | INFO | ETL pipeline completed successfully.
