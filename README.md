@@ -40,7 +40,8 @@ healthtech-etl/
 ## 🚀 Quick Start
 
 ```bash
-git clone https://github.com/your-org/sales-etl.git
+git init
+git clone https://github.com/diefgonzalezpac/Technical_Assesment_VIP.git
 cd VIP_Test
 
 python -m venv .venv
