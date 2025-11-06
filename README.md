@@ -1,15 +1,15 @@
 # VIP Assesment ETL — from Excel files → PostgreSQL (default) or DuckDB (for simplicity)
 
 An idempotent **ETL pipeline** that reads two Excel files (doctors, appointments), cleans/transforms them, and loads the results into:
-- **PostgreSQL** (default; via Docker or your local server), or
-- **DuckDB** (no server required) with `--duckdb`.
+- **PostgreSQL** (default), or
+- **DuckDB** (no server required RECOMMENDED) with `--duckdb`.
 
 It also writes final cleaned CSVs and includes business SQL queries.
 
 ## 🧰 Tech Stack
 
 - **Python** (pandas, openpyxl, python-dotenv)
-- **PostgreSQL** (via Docker or local)
+- **PostgreSQL**
 - **DuckDB** (embedded; single file)
 - **Logging** to console and `logs/etl.log`
 
