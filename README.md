@@ -104,3 +104,23 @@ python main.py --duckdb
 🗓️ Q3 — How many cancelled appointments are there between Oct 21, 2025 and Oct 24, 2025 (inclusive)?
 
 🧑‍⚕️ Q4 — What is the total number of confirmed appointments for each doctor?
+
+## AWS PROD ETL
+
+-- **Orchestration:** 
+
+    Amazon MWAA (Managed Airflow)
+    Centralized DAGs, retries, SLAs, dependency management, auditability.
+
+-- **Extract (E):** 
+    AWS Lambda on S3 events or scheduled by Airflow
+    Validates uploads, unzips/xlsx→Parquet, basic normalization, pushes to S3 raw/bronze.
+
+-- **Transform (T):**
+
+    ELT in Snowflake using dbt (models, tests, docs) and/or SnowflakeOperator from Airflow. This keeps logic closer to the data and scales with Snowflake’s compute.
+
+-- **Load (L):**
+
+    As discussed in our last meeting Snowflake is the company’s warehouse
+    Airflow → SnowflakeOperator: run COPY INTO on a schedule with file manifests 
