@@ -97,19 +97,19 @@ python main.py --duckdb
 
 ## Questions
 
-🔢 Q1 — Which doctor has the most confirmed appointments?
+🔢 Q1 — Which doctor has the most confirmed appointments? **ANSWER 152**
 
 ![image alt](https://github.com/diefgonzalezpac/Technical_Assesment_VIP/blob/4e50da54e98833b9b40df405006a13bfae4a15f4/Query%20Question%201.png)
 
-🧍‍♀️ Q2 — How many confirmed appointments does the patient with patient_id ‘34’ have?
+🧍‍♀️ Q2 — How many confirmed appointments does the patient with patient_id ‘34’ have? **ANSWER 14**
 
 ![image alt](https://github.com/diefgonzalezpac/Technical_Assesment_VIP/blob/4e50da54e98833b9b40df405006a13bfae4a15f4/Query%20Question%202.png)
 
-🗓️ Q3 — How many cancelled appointments are there between Oct 21, 2025 and Oct 24, 2025 (inclusive)?
+🗓️ Q3 — How many cancelled appointments are there between Oct 21, 2025 and Oct 24, 2025 (inclusive)? **ANSWER 66**
 
 ![image alt](https://github.com/diefgonzalezpac/Technical_Assesment_VIP/blob/4e50da54e98833b9b40df405006a13bfae4a15f4/Query%20Question%203.png)
 
-🧑‍⚕️ Q4 — What is the total number of confirmed appointments for each doctor?
+🧑‍⚕️ Q4 — What is the total number of confirmed appointments for each doctor? **ANSWER See table below**
 
 ![image alt](https://github.com/diefgonzalezpac/Technical_Assesment_VIP/blob/4e50da54e98833b9b40df405006a13bfae4a15f4/Query%20Question%204.png)
 
