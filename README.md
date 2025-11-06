@@ -69,7 +69,7 @@ cp .env.example .env
 python main.py
 ```
 
-Second one (Recommended) Run with DuckDB (no server required)
+Second one **(RECOMMENDED)** Run with DuckDB (no server required)
 ```bash
 # Run ETL (DuckDB backend)
 python main.py --duckdb
